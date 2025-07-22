@@ -1,0 +1,202 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* بدنه صفحه */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0a2540, #123a6b);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* کانتینر فرم */
+.container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  color: #1a2b4c;
+}
+
+/* تیتر فرم */
+h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #0a3e7a;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+/* پاراگراف توضیحات */
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  color: #4a5d7a;
+}
+
+/* خط جداکننده */
+hr {
+  border: none;
+  border-top: 2px solid #0a3e7a;
+  margin-bottom: 30px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+
+/* لیبل‌ها */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #0a3e7a;
+  user-select: none;
+}
+
+/* فیلدهای ورودی */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1.8px solid #aac8ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #0a2540;
+  background-color: #f9fbff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline-offset: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #3366ff;
+  box-shadow: 0 0 8px #6699ff88;
+  outline: none;
+}
+
+/* Placeholder */
+::placeholder {
+  color: #9bb7e0;
+  font-style: italic;
+}
+
+/* چک باکس */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* متن کنار چک باکس */
+label > input[type="checkbox"] + span {
+  cursor: pointer;
+}
+
+/* لینک قوانین */
+a {
+  color: #3366ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #003db3;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* دکمه‌ها */
+.clearfix {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+button.cancelbtn,
+button.signupbtn {
+  flex: 1;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+button.cancelbtn {
+  background-color: #d9534f;
+}
+
+button.cancelbtn:hover,
+button.cancelbtn:focus {
+  background-color: #c9302c;
+  outline: none;
+  box-shadow: 0 6px 20px rgba(217, 83, 79, 0.7);
+}
+
+button.signupbtn {
+  background-color: #3366ff;
+}
+
+button.signupbtn:hover,
+button.signupbtn:focus {
+  background-color: #0047cc;
+  outline: none;
+  box-shadow: 0 6px 20px rgba(51, 102, 255, 0.7);
+}
+
+/* متن پیام */
+.container p:last-of-type {
+  font-size: 0.95rem;
+  color: #606c86;
+  margin-top: 25px;
+  user-select: none;
+}
+
+/* ریسپانسیو */
+@media (max-width: 700px) {
+  .container {
+    padding: 30px 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button.cancelbtn,
+  button.signupbtn {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
